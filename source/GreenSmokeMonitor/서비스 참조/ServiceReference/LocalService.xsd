@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" />
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="UseSubItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ManagePhysicalParentConnectItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ParentSubItem" nillable="true" type="tns:UseSubItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UseSubItem" nillable="true" type="tns:UseSubItem" />
+  <xs:complexType name="ManagePhysicalParentConnectItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ManagePhysicalItem">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManagePhysicalParentConnectItem" nillable="true" type="tns:ManagePhysicalParentConnectItem" />
+  <xs:complexType name="ManagePhysicalItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CategoryOnItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConnectedTime" type="xs:dateTime" />
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" minOccurs="0" name="CurrentType" type="q1:EnumItem" />
+          <xs:element minOccurs="0" name="DisconnectedTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsConnected" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsEnable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPowerOn" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSafe" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManagePhysicalItem" nillable="true" type="tns:ManagePhysicalItem" />
+  <xs:complexType name="CategoryOnItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DefineItem">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CategoryItems" nillable="true" type="q2:ArrayOfKeyValueOfstringCategoryQwULWiw_S" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CategoryOnItem" nillable="true" type="tns:CategoryOnItem" />
+  <xs:complexType name="DefineItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GreenSmokeItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DefineItem" nillable="true" type="tns:DefineItem" />
+  <xs:complexType name="GreenSmokeItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GreenSmokeObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GreenSmokeItem" nillable="true" type="tns:GreenSmokeItem" />
+  <xs:complexType name="GreenSmokeObject">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="GreenSmokeObject" nillable="true" type="tns:GreenSmokeObject" />
+  <xs:complexType name="UseChildPolicy">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DefineItem">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UseChildPolicy" nillable="true" type="tns:UseChildPolicy" />
+  <xs:complexType name="PolicyChild">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CategoryOnItem">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PolicyChild" nillable="true" type="tns:PolicyChild" />
+</xs:schema>

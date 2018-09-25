@@ -1,0 +1,13 @@
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\ConsoleServerApp.exe.config
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\ConsoleServerApp.exe
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\ConsoleServerApp.pdb
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\GreenSmoke.Core.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\GreenSmoke.Core.pdb
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\obj\Debug\ConsoleServerApp.exe
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\ConsoleServerApp\obj\Debug\ConsoleServerApp.pdb

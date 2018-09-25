@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{D32BD68E-7378-456D-8AEE-EDDC461A268C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Config\Config.csproj", "{65032CCE-F8B4-4BBB-94B6-5A73623BFD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleServerApp", "ConsoleServerApp\ConsoleServerApp.csproj", "{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{3098F4A6-4FDA-49C6-9308-6D556A6D936D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CF0AF356-20B8-49BE-AC0C-08221CE91F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenSmokeMonitor", "GreenSmokeMonitor\GreenSmokeMonitor.csproj", "{C918CCFF-ADE8-49D4-B918-199C51176F6D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://db-team:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Config\\Config.csproj
+		SccProjectTopLevelParentUniqueName1 = GreenSmokeV3.sln
+		SccProjectName1 = Config
+		SccLocalPath1 = Config
+		SccProjectUniqueName2 = ConsoleServerApp\\ConsoleServerApp.csproj
+		SccProjectTopLevelParentUniqueName2 = GreenSmokeV3.sln
+		SccProjectName2 = ConsoleServerApp
+		SccLocalPath2 = ConsoleServerApp
+		SccProjectUniqueName3 = Core\\Core.csproj
+		SccProjectTopLevelParentUniqueName3 = GreenSmokeV3.sln
+		SccProjectName3 = Core
+		SccLocalPath3 = Core
+		SccProjectUniqueName4 = GreenSmokeMonitor\\GreenSmokeMonitor.csproj
+		SccProjectTopLevelParentUniqueName4 = GreenSmokeV3.sln
+		SccProjectName4 = GreenSmokeMonitor
+		SccLocalPath4 = GreenSmokeMonitor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D32BD68E-7378-456D-8AEE-EDDC461A268C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32BD68E-7378-456D-8AEE-EDDC461A268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32BD68E-7378-456D-8AEE-EDDC461A268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32BD68E-7378-456D-8AEE-EDDC461A268C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65032CCE-F8B4-4BBB-94B6-5A73623BFD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65032CCE-F8B4-4BBB-94B6-5A73623BFD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65032CCE-F8B4-4BBB-94B6-5A73623BFD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65032CCE-F8B4-4BBB-94B6-5A73623BFD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C918CCFF-ADE8-49D4-B918-199C51176F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C918CCFF-ADE8-49D4-B918-199C51176F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C918CCFF-ADE8-49D4-B918-199C51176F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C918CCFF-ADE8-49D4-B918-199C51176F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65032CCE-F8B4-4BBB-94B6-5A73623BFD11} = {3098F4A6-4FDA-49C6-9308-6D556A6D936D}
+		{48ED6A14-5F4F-420A-B32A-3C4B7AC379AC} = {3098F4A6-4FDA-49C6-9308-6D556A6D936D}
+		{D32BD68E-7378-456D-8AEE-EDDC461A268C} = {3098F4A6-4FDA-49C6-9308-6D556A6D936D}
+		{C918CCFF-ADE8-49D4-B918-199C51176F6D} = {CF0AF356-20B8-49BE-AC0C-08221CE91F12}
+	EndGlobalSection
+EndGlobal

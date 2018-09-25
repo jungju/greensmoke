@@ -1,0 +1,160 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="GreenSmokeMonitor.ViewControl.Item.ProductItemInfo"
+    Height="300" Width="1000" >
+	<UserControl.Resources>
+		<Storyboard x:Key="_SBPowerOff">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ElPowerBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFD5959"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF7A7A7A"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ElPowerBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.976"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ElPowerBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF5B0000"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF3D3D3D"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="_SBPowerOn">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="_ElPowerBody">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF7A7A7A"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFFD5959"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="_ElPowerBody">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.976"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="_ElPowerBody">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3D3D3D"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF5B0000"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="_SBSafeOn">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ElSafeBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF282828"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF065B00"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ElSafeBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF8B8C8B"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF59FD6C"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="_SBSafeOff">
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="_ElSafeBody">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF065B00"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF282828"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="_ElSafeBody">
+				<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF59FD6C"/>
+				<SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF8B8C8B"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource _SBPowerOff}" x:Name="_SBPowerOff_BeginStoryboard"/>
+			<BeginStoryboard Storyboard="{StaticResource _SBPowerOn}" x:Name="_SBPowerOn_BeginStoryboard"/>
+			<BeginStoryboard Storyboard="{StaticResource _SBSafeOn}"/>
+			<BeginStoryboard Storyboard="{StaticResource _SBSafeOff}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
+	<Grid  x:Name="_GridProductInfo">
+		<Rectangle Margin="0,0,0,20" Stroke="#FFFFFFFF" Width="990" HorizontalAlignment="Center" RadiusY="10" RadiusX="10">
+			<Rectangle.Fill>
+				<RadialGradientBrush GradientOrigin="-0.121,1.263">
+					<RadialGradientBrush.RelativeTransform>
+						<TransformGroup>
+							<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.156" ScaleY="1.156"/>
+							<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+							<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+							<TranslateTransform X="-0.082" Y="-0.073"/>
+						</TransformGroup>
+					</RadialGradientBrush.RelativeTransform>
+					<GradientStop Color="#0AFFACAC" Offset="0"/>
+					<GradientStop Color="#FF59C2FD" Offset="0.558"/>
+					<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					<GradientStop Color="#FF0F39FF" Offset="0.99"/>
+				</RadialGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Image HorizontalAlignment="Left" Margin="20,25.5,0,44.5" Width="280" Source="http://farm3.static.flickr.com/2224/2150118854_3bc6dfe07d_b.jpg" x:Name="_ImgProduceDetailImg" Stretch="Fill" Height="230">
+			<Image.BitmapEffect>
+				<OuterGlowBitmapEffect GlowSize="6"/>
+			</Image.BitmapEffect>
+		</Image>
+		<Label Height="Auto" Width="Auto" x:Name="_LbProductRunningTime" Margin="320.683,77.22,0,0" Content="10분 켜짐" Foreground="#FFFFFFFF" Background="{x:Null}" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" />
+		<Label Margin="412.5,6.5,0,0" VerticalAlignment="Top" Height="Auto" FontSize="36"  Foreground="#FFFFFFFF" x:Name="_LbProductName" Content="밥솥" Width="Auto" HorizontalAlignment="Left"  />
+		<Label Margin="523,0,0,39.097" Height="Auto" Content="10A" FontSize="30" Background="{x:Null}" Foreground="#FFA7FF9B" x:Name="_LBProductCTValue" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+		<Label Margin="520,169.3,0,0" Content="10W" FontSize="30" Background="{x:Null}" Foreground="#FFA7FF9B" x:Name="_LBProductCTTotalValue" Width="Auto"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
+		<Canvas Margin="655.5,5.5,222.5,0" VerticalAlignment="Top" Height="109.5" x:Name="_CvPowerButton">
+			<Ellipse Height="109.5" Stroke="#FFFBAEAE" Width="118.5" x:Name="_ElPowerBody">
+				<Ellipse.Fill>
+					<RadialGradientBrush GradientOrigin="0.346,0.297">
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.156" ScaleY="1.156"/>
+								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform X="-0.082" Y="-0.073"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#0AFFACAC" Offset="0"/>
+						<GradientStop Color="#FFFD5959" Offset="0.558"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+						<GradientStop Color="#FF5B0000" Offset="1"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Label Width="Auto" Height="Auto" Content="Power" FontSize="26" Background="{x:Null}" Foreground="#FFFFFFFF" FontWeight="Bold" Canvas.Left="16.2" Canvas.Top="33.24"/>
+		</Canvas>
+		<Canvas Margin="655.5,121.5,222.5,61" x:Name="_CvSafeButton">
+			<Ellipse Stroke="#FFAEFBB0" Width="118.5" Height="109.5" x:Name="_ElSafeBody">
+				<Ellipse.Fill>
+					<RadialGradientBrush GradientOrigin="0.346,0.297">
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.156" ScaleY="1.156"/>
+								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform X="-0.082" Y="-0.073"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#0AFFACAC" Offset="0"/>
+						<GradientStop Color="#FF59FD6C" Offset="0.558"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+						<GradientStop Color="#FF065B00" Offset="1"/>
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+			<Label Width="Auto" Height="Auto" Content="Safe" FontSize="26" Background="{x:Null}" Foreground="#FFFFFFFF" FontWeight="Bold" Canvas.Left="28.69" Canvas.Top="31.917"/>
+		</Canvas>
+		<Label Margin="329.5,175.5,0,0" Content="총 소비전력" FontSize="24" Foreground="#FFFFFFFF" VerticalAlignment="Top" Height="Auto" HorizontalAlignment="Left" />
+		<Label Margin="329.5,0,0,40.547" Content="현재 소비전력" FontSize="24" Foreground="#FFFFFFFF" VerticalAlignment="Bottom" Height="Auto" HorizontalAlignment="Left" />
+		<Rectangle Margin="313,0,0,36.5" Stroke="#FFFFFFFF" RadiusX="10" RadiusY="10" Fill="{x:Null}" Width="309" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="90.403"/>
+		<Canvas Margin="451.5,77.22,530.5,0" VerticalAlignment="Top" Height="37.78" x:Name="_CanUseLevel1">
+			<Rectangle Height="37.78" Stroke="#FF9D7F7B" RadiusX="10" RadiusY="10" Width="170.5">
+				<Rectangle.Fill>
+					<RadialGradientBrush GradientOrigin="0.346,0.297">
+						<RadialGradientBrush.RelativeTransform>
+							<TransformGroup>
+								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.156" ScaleY="1.156"/>
+								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+								<TranslateTransform X="-0.082" Y="-0.073"/>
+							</TransformGroup>
+						</RadialGradientBrush.RelativeTransform>
+						<GradientStop Color="#0AFFACAC" Offset="0"/>
+						<GradientStop Color="#FFCE7639" Offset="0.558"/>
+						<GradientStop Color="#FFFFC5B0" Offset="0"/>
+						<GradientStop Color="#FFE67247" Offset="1"/>
+					</RadialGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Label Height="Auto" Content="잘 사용됨" Foreground="#FFFFFFFF" FontSize="20" Canvas.Left="35.4"/>
+		</Canvas>
+	</Grid>
+</UserControl>

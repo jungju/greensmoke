@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cd3436f7-3b2b-4d7a-8a9a-045939119373" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://203.237.140.225:22222/LocalService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LocalService.xsd" MetadataType="Schema" ID="84481f74-2b17-4a38-b43a-17fbd142331e" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd4" />
+    <MetadataFile FileName="LocalService1.xsd" MetadataType="Schema" ID="37576799-19b9-462b-820a-0719a674e6a1" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd1" />
+    <MetadataFile FileName="LocalService2.xsd" MetadataType="Schema" ID="eacae048-baca-4013-a191-26fd7d950b33" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd2" />
+    <MetadataFile FileName="CoreLogic.wsdl" MetadataType="Wsdl" ID="597e3089-09c5-48c2-8850-ed44e8336888" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?wsdl" />
+    <MetadataFile FileName="LocalService3.xsd" MetadataType="Schema" ID="38b827cb-9d63-4c69-a8dd-0f695f7f4e5d" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd0" />
+    <MetadataFile FileName="LocalService.disco" MetadataType="Disco" ID="4ff27d59-df18-4c6a-9c15-ad8ed314351f" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?disco" />
+    <MetadataFile FileName="LocalService4.xsd" MetadataType="Schema" ID="c4ca47f8-16f4-4322-94f8-d315dd3f328f" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd5" />
+    <MetadataFile FileName="LocalService5.xsd" MetadataType="Schema" ID="57c63f00-cb7e-41c5-8202-1ba2714b8999" SourceId="1" SourceUrl="http://203.237.140.225:22222/LocalService?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

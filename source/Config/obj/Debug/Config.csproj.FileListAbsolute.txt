@@ -1,0 +1,5 @@
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Config\bin\Debug\GreenSmoke.Config.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Config\bin\Debug\GreenSmoke.Config.pdb
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Config\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Config\obj\Debug\GreenSmoke.Config.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Config\obj\Debug\GreenSmoke.Config.pdb

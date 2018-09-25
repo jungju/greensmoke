@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" />
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" />
+  <xs:complexType name="ArrayOfKeyValueOfstringGroupQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringGroupQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q1:Group" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringGroupQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringGroupQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringCategoryQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringCategoryQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q2:Category" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringCategoryQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringCategoryQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMultiStripQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMultiStripQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q3:MultiStrip" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMultiStripQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringMultiStripQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringManagerQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringManagerQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q4:Manager" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringManagerQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringManagerQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringAdaptorQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringAdaptorQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q5:Adaptor" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringAdaptorQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringAdaptorQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringProductQwULWiw_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringProductQwULWiw_S">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" name="Value" nillable="true" type="q6:Product" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringProductQwULWiw_S" nillable="true" type="tns:ArrayOfKeyValueOfstringProductQwULWiw_S" />
+  <xs:complexType name="ArrayOfKeyValueOfstringUseChildPolicyIzB0s_SyC">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringUseChildPolicyIzB0s_SyC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" name="Value" nillable="true" type="q7:UseChildPolicy" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringUseChildPolicyIzB0s_SyC" nillable="true" type="tns:ArrayOfKeyValueOfstringUseChildPolicyIzB0s_SyC" />
+  <xs:complexType name="ArrayOfKeyValueOfstringPolicyChildIzB0s_SyC">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringPolicyChildIzB0s_SyC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" name="Value" nillable="true" type="q8:PolicyChild" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringPolicyChildIzB0s_SyC" nillable="true" type="tns:ArrayOfKeyValueOfstringPolicyChildIzB0s_SyC" />
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+</xs:schema>

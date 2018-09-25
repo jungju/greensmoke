@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="GreenSmokeMonitor.ViewControl.Item.PolicyItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Width="220" Height="200">
+    <UserControl.Resources>
+        <Storyboard x:Key="_SBModeOn">
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ConButtonBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFBBBBBB"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FFFFEEEE"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ConButtonBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF6E6E6E"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FFFF7A7A"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ConButtonBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF3C403C"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FFB92F2F"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="_ConButtonBody" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF000000"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FF8E6565"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="_SBModeOff">
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="_ConButtonBody">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFEEEE"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FFBBBBBB"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="_ConButtonBody">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFF7A7A"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FF6E6E6E"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="_ConButtonBody">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFB92F2F"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FF3C403C"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="_ConButtonBody">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF8E6565"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.7000000" Value="#FF000000"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="_ConScenarioItem" Width="200" Height="100">
+        <Ellipse  Stroke="{x:Null}" Margin="0,0,0,0" x:Name="_ConButtonBody">
+            <Ellipse.BitmapEffect>
+                <OuterGlowBitmapEffect GlowColor="#FFA38080"/>
+            </Ellipse.BitmapEffect>
+            <Ellipse.Fill>
+                <RadialGradientBrush GradientOrigin="0.221,0.254">
+                    <RadialGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1" ScaleY="1"/>
+                            <SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="3.632" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </RadialGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFBBBBBB" Offset="0"/>
+                    <GradientStop Color="#FF3C403C" Offset="0.923"/>
+                    <GradientStop Color="#FF6E6E6E" Offset="0.548"/>
+                    <GradientStop Color="#FF000000" Offset="1"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label Margin="0,0,0,0" Content="취침" FontSize="36" Background="{x:Null}" BorderBrush="{x:Null}"  Height="Auto" Foreground="#FFFFFFFF" FontWeight="Bold" x:Name="_ConModeName" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>

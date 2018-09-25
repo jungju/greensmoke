@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" name="CoreLogic" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ILocal_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" />
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core" />
+      <xsd:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Policy" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILocal_GetGroupList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetGroupList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetMultiStripList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultiStripList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetMultiStripList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultiStripListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetManagerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetManagerList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetManagerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetManagerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetAdaptorList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdaptorList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetAdaptorList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdaptorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetCategoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetCategoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetProductList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductList" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetProductList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetPolicyItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetPolicyItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetPolicyChildrenItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyChildrenItems" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetPolicyChildrenItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyChildrenItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_Authenticator_InputMessage">
+    <wsdl:part name="parameters" element="tns:Authenticator" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_Authenticator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_ItemControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:ItemControl" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_ItemControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ItemControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreatePolicy_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePolicy" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreatePolicy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemovePolicy_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePolicy" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemovePolicy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddScenarioItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddScenarioItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddScenarioItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddScenarioItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddSupervisionItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupervisionItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddSupervisionItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupervisionItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemovePolicyChildItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePolicyChildItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemovePolicyChildItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePolicyChildItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RegisterProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterProduct" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RegisterProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetAdaptorsCT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdaptorsCT" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_GetAdaptorsCT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdaptorsCTResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateGroup" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGroup" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateCategoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCategoryItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateCategoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCategoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteCategoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteCategoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateManager" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_CreateManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteManager" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_DeleteManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddCategoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCategoryItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddCategoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCategoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveCategoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveCategoryItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveCategoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveCategoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddSubItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddSubItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSubItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveSubItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSubItem" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveSubItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveSubItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddManager" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_AddManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveManager" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_RemoveManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_TestService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="ILocal_TestService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILocal">
+    <wsdl:operation name="GetGroupList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetGroupList" message="tns:ILocal_GetGroupList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetGroupListResponse" message="tns:ILocal_GetGroupList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMultiStripList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetMultiStripList" message="tns:ILocal_GetMultiStripList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetMultiStripListResponse" message="tns:ILocal_GetMultiStripList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetManagerList" message="tns:ILocal_GetManagerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetManagerListResponse" message="tns:ILocal_GetManagerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdaptorList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetAdaptorList" message="tns:ILocal_GetAdaptorList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetAdaptorListResponse" message="tns:ILocal_GetAdaptorList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetCategoryList" message="tns:ILocal_GetCategoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetCategoryListResponse" message="tns:ILocal_GetCategoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IItemInformation/GetProductList" message="tns:ILocal_GetProductList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IItemInformation/GetProductListResponse" message="tns:ILocal_GetProductList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyInformation/GetPolicyItem" message="tns:ILocal_GetPolicyItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyInformation/GetPolicyItemResponse" message="tns:ILocal_GetPolicyItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyChildrenItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPolicyInformation/GetPolicyChildrenItems" message="tns:ILocal_GetPolicyChildrenItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPolicyInformation/GetPolicyChildrenItemsResponse" message="tns:ILocal_GetPolicyChildrenItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Authenticator">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticate/Authenticator" message="tns:ILocal_Authenticator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthenticate/AuthenticatorResponse" message="tns:ILocal_Authenticator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ItemControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IControlItem/ItemControl" message="tns:ILocal_ItemControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IControlItem/ItemControlResponse" message="tns:ILocal_ItemControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePolicy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManagePolicy/CreatePolicy" message="tns:ILocal_CreatePolicy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManagePolicy/CreatePolicyResponse" message="tns:ILocal_CreatePolicy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePolicy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManagePolicy/RemovePolicy" message="tns:ILocal_RemovePolicy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManagePolicy/RemovePolicyResponse" message="tns:ILocal_RemovePolicy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddScenarioItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManagePolicy/AddScenarioItem" message="tns:ILocal_AddScenarioItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManagePolicy/AddScenarioItemResponse" message="tns:ILocal_AddScenarioItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSupervisionItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManagePolicy/AddSupervisionItem" message="tns:ILocal_AddSupervisionItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManagePolicy/AddSupervisionItemResponse" message="tns:ILocal_AddSupervisionItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePolicyChildItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManagePolicy/RemovePolicyChildItem" message="tns:ILocal_RemovePolicyChildItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManagePolicy/RemovePolicyChildItemResponse" message="tns:ILocal_RemovePolicyChildItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegisterProduct/RegisterProduct" message="tns:ILocal_RegisterProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegisterProduct/RegisterProductResponse" message="tns:ILocal_RegisterProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdaptorsCT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonitorItem/GetAdaptorsCT" message="tns:ILocal_GetAdaptorsCT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonitorItem/GetAdaptorsCTResponse" message="tns:ILocal_GetAdaptorsCT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/CreateGroup" message="tns:ILocal_CreateGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/CreateGroupResponse" message="tns:ILocal_CreateGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/DeleteGroup" message="tns:ILocal_DeleteGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/DeleteGroupResponse" message="tns:ILocal_DeleteGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCategoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/CreateCategoryItem" message="tns:ILocal_CreateCategoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/CreateCategoryItemResponse" message="tns:ILocal_CreateCategoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/DeleteCategoryItem" message="tns:ILocal_DeleteCategoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/DeleteCategoryItemResponse" message="tns:ILocal_DeleteCategoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/CreateManager" message="tns:ILocal_CreateManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/CreateManagerResponse" message="tns:ILocal_CreateManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/DeleteManager" message="tns:ILocal_DeleteManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/DeleteManagerResponse" message="tns:ILocal_DeleteManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCategoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/AddCategoryItem" message="tns:ILocal_AddCategoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/AddCategoryItemResponse" message="tns:ILocal_AddCategoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveCategoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/RemoveCategoryItem" message="tns:ILocal_RemoveCategoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/RemoveCategoryItemResponse" message="tns:ILocal_RemoveCategoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSubItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/AddSubItem" message="tns:ILocal_AddSubItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/AddSubItemResponse" message="tns:ILocal_AddSubItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSubItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/RemoveSubItem" message="tns:ILocal_RemoveSubItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/RemoveSubItemResponse" message="tns:ILocal_RemoveSubItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/AddManager" message="tns:ILocal_AddManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/AddManagerResponse" message="tns:ILocal_AddManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IManageItem/RemoveManager" message="tns:ILocal_RemoveManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IManageItem/RemoveManagerResponse" message="tns:ILocal_RemoveManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILocal/TestService" message="tns:ILocal_TestService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILocal/TestServiceResponse" message="tns:ILocal_TestService_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ILocal" type="tns:ILocal">
+    <wsp:PolicyReference URI="#WSHttpBinding_ILocal_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGroupList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetGroupList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultiStripList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetMultiStripList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetManagerList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetManagerList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdaptorList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetAdaptorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetCategoryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <soap12:operation soapAction="http://tempuri.org/IItemInformation/GetProductList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyItem">
+      <soap12:operation soapAction="http://tempuri.org/IPolicyInformation/GetPolicyItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyChildrenItems">
+      <soap12:operation soapAction="http://tempuri.org/IPolicyInformation/GetPolicyChildrenItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Authenticator">
+      <soap12:operation soapAction="http://tempuri.org/IAuthenticate/Authenticator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ItemControl">
+      <soap12:operation soapAction="http://tempuri.org/IControlItem/ItemControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePolicy">
+      <soap12:operation soapAction="http://tempuri.org/IManagePolicy/CreatePolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePolicy">
+      <soap12:operation soapAction="http://tempuri.org/IManagePolicy/RemovePolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddScenarioItem">
+      <soap12:operation soapAction="http://tempuri.org/IManagePolicy/AddScenarioItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSupervisionItem">
+      <soap12:operation soapAction="http://tempuri.org/IManagePolicy/AddSupervisionItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePolicyChildItem">
+      <soap12:operation soapAction="http://tempuri.org/IManagePolicy/RemovePolicyChildItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterProduct">
+      <soap12:operation soapAction="http://tempuri.org/IRegisterProduct/RegisterProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdaptorsCT">
+      <soap12:operation soapAction="http://tempuri.org/IMonitorItem/GetAdaptorsCT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGroup">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/CreateGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGroup">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/DeleteGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCategoryItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/CreateCategoryItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategoryItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/DeleteCategoryItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateManager">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/CreateManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteManager">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/DeleteManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCategoryItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/AddCategoryItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveCategoryItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/RemoveCategoryItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/AddSubItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveSubItem">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/RemoveSubItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddManager">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/AddManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveManager">
+      <soap12:operation soapAction="http://tempuri.org/IManageItem/RemoveManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/ILocal/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CoreLogic">
+    <wsdl:port name="WSHttpBinding_ILocal" binding="tns:WSHttpBinding_ILocal">
+      <soap12:address location="http://203.237.140.225:22222/LocalService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://203.237.140.225:22222/LocalService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

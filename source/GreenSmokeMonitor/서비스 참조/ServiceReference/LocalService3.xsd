@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" />
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://203.237.140.225:22222/LocalService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Policy" />
+  <xs:element name="GetGroupList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetGroupListResult" nillable="true" type="q1:ArrayOfKeyValueOfstringGroupQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMultiStripList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMultiStripListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetMultiStripListResult" nillable="true" type="q2:ArrayOfKeyValueOfstringMultiStripQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetManagerList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetManagerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetManagerListResult" nillable="true" type="q3:ArrayOfKeyValueOfstringManagerQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdaptorList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdaptorListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAdaptorListResult" nillable="true" type="q4:ArrayOfKeyValueOfstringAdaptorQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCategoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCategoryListResult" nillable="true" type="q5:ArrayOfKeyValueOfstringCategoryQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetProductListResult" nillable="true" type="q6:ArrayOfKeyValueOfstringProductQwULWiw_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyItem">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPolicyItemResult" nillable="true" type="q7:ArrayOfKeyValueOfstringUseChildPolicyIzB0s_SyC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyChildrenItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="policyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyChildrenItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPolicyChildrenItemsResult" nillable="true" type="q8:ArrayOfKeyValueOfstringPolicyChildIzB0s_SyC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Authenticator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="managerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticatorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ItemControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" minOccurs="0" name="currentControl" type="q9:EnumControl" />
+        <xs:element minOccurs="0" name="itemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ItemControlResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" minOccurs="0" name="kindPolicy" type="q10:EnumPolicy" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePolicyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="policyID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePolicyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddScenarioItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scenarioID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="offTime" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="onTime" nillable="true" type="xs:dateTime" />
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="pauseTimeSpan" nillable="true" type="q11:duration" />
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="playTimeSpan" nillable="true" type="q12:duration" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="categoryItemsID" nillable="true" type="q13:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddScenarioItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSupervisionItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="supervisionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="criticalValue" type="xs:int" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="runningSpan" type="q14:duration" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Policy" minOccurs="0" name="valueMode" type="q15:EnumCTValueMode" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Policy" minOccurs="0" name="processMode" type="q16:EnumProcessMode" />
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="categoryItemsID" nillable="true" type="q17:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSupervisionItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePolicyChildItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="policyID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="policyChildItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePolicyChildItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="productID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strProductImagePath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterProductResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdaptorsCT">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdaptorsCTResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAdaptorsCTResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateGroupResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="groupID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteGroupResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCategoryItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="categoryID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/GreenSmoke.Core.Item" minOccurs="0" name="currentItem" type="q18:EnumItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCategoryItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategoryItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="categoryItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategoryItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateManager">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="managerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="managerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateManagerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteManager">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="managerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteManagerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCategoryItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parentItemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="childItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCategoryItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveCategoryItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parentItemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="childItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveCategoryItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSubItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parentItemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddSubItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveSubItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parentItemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="subItemID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveSubItemResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddManager">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="itemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="managerId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddManagerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveManager">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="itemID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="managerId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveManagerResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="clientMessase" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

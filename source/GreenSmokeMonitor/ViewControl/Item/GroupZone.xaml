@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="GreenSmokeMonitor.ViewControl.Item.GroupZone"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="172" Width="268">
+    <Grid x:Name="_334d">
+        <Canvas>
+            <StackPanel Canvas.Left="37" Canvas.Top="20" Height="129" Name="_ProductBox" Width="165" />
+        </Canvas>
+    </Grid>
+</UserControl>

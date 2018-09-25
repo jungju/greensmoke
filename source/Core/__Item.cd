@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GreenSmoke.Core.Item.Manager" BaseTypeListCollapsed="true">
+    <Position X="19" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Item\Manager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.Item.MultiStrip" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="8" Width="2.25" />
+    <InheritanceLine Type="GreenSmoke.Core.ManagePhysicalParentConnectItem" FixedToPoint="true">
+      <Path>
+        <Point X="11.125" Y="6.655" />
+        <Point X="11.125" Y="9" />
+        <Point X="11.75" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item\MultiStrip.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.Item.Group" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="GreenSmoke.Core.UseSubItem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="4.25" />
+        <Point X="17.25" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAAAAAAAAAAAABAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Item\Group.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.Item.Adaptor" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="8" Width="2.25" />
+    <InheritanceLine Type="GreenSmoke.Core.ManagePhysicalParentConnectItem" FixedToPoint="true">
+      <Path>
+        <Point X="11.125" Y="6.655" />
+        <Point X="11.125" Y="9" />
+        <Point X="8" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Item\Adaptor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.ManagePhysicalItem">
+    <Position X="5.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AGQAAYAAABAIQADAABEgCAgEACAAAAAIAADAAkAAFAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.CategoryOnItem">
+    <Position X="8.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAYAAAAAAAAAAIAAEAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.Item.Product" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="7.75" Width="1.75" />
+    <InheritanceLine Type="GreenSmoke.Core.UseSubItem" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.375" Y="6.713" />
+        <Point X="15.375" Y="7.088" />
+        <Point X="15.375" Y="7.088" />
+        <Point X="15.375" Y="9" />
+        <Point X="15.75" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAACAAAAAARAA=</HashCode>
+      <FileName>Item\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.Item.Category">
+    <Position X="18.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAIAAAAAAAAAgQAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreenSmoke.Core.GreenSmokeObject">
+    <Position X="18.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreenSmoke.Core.GreenSmokeItem">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreenSmoke.Core.DefineItem">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAIIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GreenSmoke.Core.ManagePhysicalParentConnectItem">
+    <Position X="9.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAIAAAAAAAAAAAQAAAAAAEAAgAAAAAAAQBAAAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GreenSmoke.Core.UseSubItem">
+    <Position X="14.25" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAEAAgAIAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>_OGreenSmoke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

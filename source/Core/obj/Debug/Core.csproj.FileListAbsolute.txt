@@ -1,0 +1,12 @@
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\GreenSmoke.Core.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\GreenSmoke.Core.pdb
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\GreenSmoke.Config.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\GreenSmoke.Config.pdb
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\obj\Debug\GreenSmoke.Core.dll
+C:\Users\Jeongzu\Documents\Visual Studio 2008\Projects\GreenSmoke\GreenSmokeV3\Core\obj\Debug\GreenSmoke.Core.pdb
